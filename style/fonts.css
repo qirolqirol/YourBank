@@ -1,0 +1,24 @@
+@font-face {
+    font-family: lexand_300;
+    src: url('../fonts/Lexend-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: lexand_400;
+    src: url('../fonts/Lexend-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: lexand_500;
+    src: url('../fonts/Lexend-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: lexand_600;
+    src: url('../fonts/Lexend-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: lexand_700;
+    src: url('../fonts/Lexend-Bold.ttf') format('truetype');
+}

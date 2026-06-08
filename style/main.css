@@ -1,0 +1,42 @@
+@import "./fonts.css";
+@import "./basic.css";
+
+
+/* **** COMMON STYLES **** */
+@import "./navbar.css";
+@import "./faq.css";
+@import "./testimonial.css";
+@import "./cta.css";
+@import "./overview.css";
+@import "./footer.css";
+
+
+/* **** HOME STYLES **** */
+@import "./home/hero.css";
+@import "./home/products.css";
+@import "./home/useCases.css";
+@import "./home/features.css";
+
+
+/* **** CAREER STYLES **** */
+@import "./career/ourValues.css";
+@import "./career/benefits.css";
+@import "./career/jobs.css";
+
+
+/* **** ABOUT STYLES **** */
+@import "./about/missionVision.css";
+@import "./about/pressReleases.css";
+
+
+/* **** SECURITY STYLES **** */
+@import "./security/howWeProtectYou.css";
+
+
+/* **** LOGIN STYLES **** */
+@import "./login/loginForm.css";
+
+
+/* **** SIGNUP STYLES **** */
+@import "./signup/signUpForm.css";
+

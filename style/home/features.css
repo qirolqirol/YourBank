@@ -1,0 +1,82 @@
+/*=============================================================
+          Features(Qulayliklar)
+========================================================== */
+
+.features_section {
+  margin-top: 15rem;
+  .features-header {
+    h1 {
+      font-size: 4.8rem;
+      color: var(--white-100);
+      font-weight: 500;
+    }
+    p {
+      margin-top: 1.4rem;
+      font-size: 1.8rem;
+      color: var(--white-100);
+      font-weight: 300;
+    }
+  }
+
+  .features-content {
+    display: flex;
+    gap: 2rem;
+
+    .features-tabs {
+      background-color: var(--grey-11);
+      border-radius: 2rem;
+      width: 45.8rem;
+      height: 33.7rem;
+      margin-top: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.4rem;
+
+      .btn-active {
+        color: var(--green-60);
+      }
+
+      button {
+        background-color: var(--grey-15);
+        color: var(--white-100);
+        width: 20.8rem;
+        height: 6.3rem;
+      }
+    }
+  }
+}
+
+.features-grid {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  .feature-card {
+    padding: 5rem 5rem 5rem 5rem;
+    background-color: var(--grey-11);
+    border: 1px solid var(--grey-15);
+    border-radius: 2rem;
+    width: 61.4rem;
+    height: 27.2rem;
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        color: var(--white-100);
+        font-size: 2.2rem;
+        font-weight: 400;
+      }
+    }
+    p {
+      margin-top: 3rem;
+      color: var(--white-100);
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}

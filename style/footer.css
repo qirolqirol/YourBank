@@ -1,0 +1,123 @@
+.footer {
+  background-color:var(--grey-11);
+  width: auto;
+  height: 57.8rem;
+  margin-top: 15rem;
+  padding-top: 13rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+  position: relative;
+
+  .footer-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+      span {
+        color: var(--white-100);
+        font-size: 1.8rem;
+      }
+    }
+
+    .footer-menu {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 2.6rem;
+      span {
+        color: var(--white-100);
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .footer-contact {
+    display: flex;
+    gap: 2rem;
+    .contact-item {
+      display: flex;
+      gap: 0.5rem;
+      span {
+        color: var(--white-100);
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color:var(--grey-10);
+    padding-left: 1.6rem ;
+    padding-right: 3rem;
+    width: 100%;
+    height: 8.4rem;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-socials {
+      display: flex;
+      gap: 1.4rem;
+      .footer-icon {
+        background-color: var(--green-60);
+        width: 5.2rem;
+        height: 5.2rem;
+        border-radius: 50%;
+        text-align: center;
+        align-content: center;
+      }
+    }
+
+    .footer-text {
+      color: #b3b3b3;
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .footer-links a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+
+  .footer-links span {
+    color: #b3b3b3;
+  }
+  .line{
+    border: none;
+    border-top: 1px solid #262626;
+    top: 29rem;
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .line2{
+    border: none;
+    border-top: 1px solid #262626;
+    bottom: 16rem;
+    width: 100%;
+    display: block;
+    position: absolute;
+
+  }
+}

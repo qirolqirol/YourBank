@@ -1,0 +1,47 @@
+/*=============================================================
+                    CTA (Hozir sotib oling)
+=============================================================*/
+.cta-section::before {
+  content: "";
+  width: 29.8rem;
+  height: 28.3rem;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-image: url(../img/simple/rasm3.png);
+}
+.cta-section {
+  border-radius: 2rem;
+  border: 1px solid #262626;
+  width: auto;
+  height: 28.8rem;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  position: relative;
+  .cta-content {
+    width: 110.3rem;
+    height: auto;
+    .cta-title {
+      color: var(--white-100);
+      font-size: 4rem;
+      font-weight: 400;
+    }
+    .cta-text {
+      margin-top: 1.4rem;
+      color: var(--white-100);
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+  .cta-btn {
+    width: 18.3rem;
+    height: 6.3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,104 @@
+.jobs {
+
+  margin-top: 15rem;
+
+  .jobs_title {
+    font-size: 4.8rem;
+    color: var(--green-60);
+    margin-bottom: 1.4rem;
+  }
+  .jobs_text {
+    width: 129.6rem;
+    font-size: 1.8rem;
+    color: var(--grey-70);
+    margin-bottom: 8rem;
+  }
+}
+
+.jobs_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  .job_card {
+    width: 100%;
+    height: 89rem;
+    border-radius: 1.6rem;
+    border: 1px solid var(--grey-15);
+    background-color: var(--grey-11);
+    padding: 5rem 5rem 5rem 5rem;
+
+    h6 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--white-100);
+    }
+    .job_subtitle {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--white-100);
+    }
+    .job_description {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--grey-70);
+      margin-bottom: 4rem;
+    }
+    .job_requirements_title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--white-100);
+    }
+    .job_requirement {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+      p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: var(--grey-70);
+      }
+    }
+    .job_btn {
+      width: 15.7rem;
+      height: 5.9rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.job_info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.4rem;
+    margin-bottom: 5rem;
+    
+    .job_location{
+        width: 16.1rem;
+        height: 4.3rem;
+        border-radius: 6.8rem;
+        background-color:var(--grey-10);
+        border: var(--grey-15);
+
+        span{
+            font-size: 1.8rem;
+            color: var(--grey-70);
+        }
+    }
+    .job_department{
+        width: 27.3rem;
+        height: 4.3rem;
+        border-radius: 6.8rem;
+        background-color:var(--grey-10);
+        border: var(--grey-15);
+
+        span{
+            font-size: 1.8rem;
+            color: var(--grey-70);
+
+        }
+    }
+
+}

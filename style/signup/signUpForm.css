@@ -1,0 +1,113 @@
+.signup {
+  max-width: 132.6rem !important;
+  border-radius: 2rem;
+  margin-top: 5.3rem;
+  padding: 10rem 15rem 10rem 15rem;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px 5px var(--grey-20);
+  .signup__title {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--green-60);
+    text-align: center;
+  }
+  .signup__subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 100%;
+    color: var(--grey-75);
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .signup__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 8rem;
+    .signup__input {
+      border: 1px solid var(--grey-15);
+      background-color: var(--grey-10);
+      padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+      width: 49.8rem;
+      height: 7rem;
+      border-radius: 3rem;
+      display: flex;
+      justify-content: space-between;
+      .signup__input1 {
+        width: 100%;
+        background-color: var(--grey-10);
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: inherit;
+      }
+    }
+  }
+  .signup__actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2.4rem;
+    align-items: center;
+    .signup__btn {
+      width: 51.8rem;
+      height: 6.3rem;
+      border-radius: 3rem;
+      background-color: var(--green-60);
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--grey-15);
+    }
+    .signup__btn--secondary {
+      background-color: var(--grey-15);
+      border: 1px solid var(--grey-20);
+      color: var(--white-100);
+    }
+  }
+}
+.signup__divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 49.8rem;
+  margin: 2rem auto;
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid var(--grey-15);
+  }
+  span {
+    padding: 0 2rem;
+    color: var(--grey-60);
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+.signup__socials {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  .signup__social {
+    background-color:#31322b;
+    width: 9.4rem;
+    height: 9.4rem;
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+    .signup__social-circle {
+      border: 1px solid #3c4623;
+      background-color:#31391d;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      align-content:center;
+      text-align: center;
+    }
+  }
+}

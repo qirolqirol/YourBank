@@ -1,0 +1,279 @@
+/*=============================================================
+          Use Cases (Foydalanish holatlari)
+========================================================== */
+.cases {
+  margin-top: 15rem;
+  .cases-head {
+    margin-bottom: 5rem;
+    h2 {
+      font-size: 4.8rem;
+      color: var(--white-100);
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.8rem;
+      margin-top: 1.4rem;
+      font-weight: 300;
+      color: var(--white-90);
+    }
+  }
+}
+/* <!-- Ikonalar (Shaxslar uchun) --> */
+.cases .cases-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  
+}
+.cases-grid::before {
+    content: "";
+    width: 22.4rem;
+    height: 21.3rem;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+    position: absolute;
+    background-image: url(../../img/simple/rasm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+.cases-grid {
+ 
+  background-color: var(--grey-11);
+  padding: 5rem 5rem 5rem 7rem;
+  border-radius: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  position: relative;
+  
+
+  
+
+  .cases-card {
+    
+    border: 1px solid var(--grey-15);
+    background-color: var(--grey-10);
+    border-radius: 2rem;
+    width: 32rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+   .finances{
+    margin-bottom: -2rem;
+   }
+
+    p {
+     
+      font-size: 2rem;
+      text-align: center;
+      color: var(--white-100);
+    }
+  }
+  
+}
+
+.cases-icon-outer {
+  background-color: #31322b;
+  border-radius: 50%;
+  width: 7.8rem;
+  height: 7.8rem;
+  align-content: center;
+  justify-items: center;
+
+  .cases-icon-inner {
+    background-color: #272a1c;
+    border: 1px solid #31391d;
+    border-radius: 50%;
+    width: 5.8rem;
+    height: 5.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* <!-- Shaxslar bloki --> */
+.cases-info {
+  .individuals {
+    width: 75rem;
+    height: 47rem;
+    margin-top: 2rem;
+    margin-left: 4.4rem;
+
+    h4 {
+      font-size: 3rem;
+      font-weight: 500;
+      color: var(--white-100);
+    }
+    h5 {
+      margin-top: 1.4rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--white-100);
+    }
+
+    .cases-stat {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6.3rem;
+
+      .cases-stats {
+        width: 18.2rem;
+        height: 14.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          font-size: 5.8rem;
+          color: var(--green-60);
+        }
+        p {
+          font-size: 1.8rem;
+          color: var(--white-100);
+        }
+      }
+    }
+    .cases-btn {
+      margin-top: 7rem;
+      width: 14.8rem;
+      height: 6.3rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      background-color: var(--grey-15);
+      color: var(--white-100);
+    }
+  }
+}
+
+
+/* <!-- Biznes bloki --> */
+.cases-info2 {
+  margin-top: 3rem;
+
+  .business {
+    margin: 2rem 2rem 2rem 0rem;
+    width: 75rem;
+    height: 47rem;
+    h3 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1.4rem;
+      color: var(--white-100);
+    }
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 6rem;
+      color: var(--white-100);
+    }
+    .cases-stat2 {
+      display: flex;
+      justify-content: space-between;
+
+      .cases-stats2 {
+        width: 18.2rem;
+        height: 14.6rem;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 5.8rem;
+          color: var(--green-60);
+        }
+        p {
+          margin-top: -1rem;
+          font-size: 1.8rem;
+          color: var(--white-100);
+        }
+      }
+    }
+    .cases-btn2 {
+      width: 14.8rem;
+      height: 6.3rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-top: 5.4rem;
+      background-color: var(--grey-15);
+      color: var(--white-100);
+    }
+  }
+}
+
+/* <!-- Ikonalar (Biznes uchun) --> */
+.cases-grid2::before {
+    content: "";
+    width: 22.4rem;
+    height: 21.3rem;
+    top: 0rem;
+    right: -2rem;
+    display: block;
+    position: absolute;
+    background-image: url(../../img/simple/rasm2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
+.cases-grid2 {
+  
+  border-radius: 4rem;
+  margin-top: 3rem;
+  background-color: var(--grey-11);
+  padding: 5rem 5rem 5rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  position: relative;
+
+  .cases-card2 {
+    border: 1px solid var(--grey-15);
+    background-color: var(--grey-10);
+    border-radius: 2rem;
+    width: 32rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    .entrepreneurs{
+        margin-bottom: -1.5rem;
+    }
+    p {
+      font-size: 2rem;
+      text-align: center;
+      color: var(--white-100);
+    }
+  }
+}
+
+.cases-icon-outer2 {
+  background-color: #31322b;
+  border-radius: 50%;
+  width: 7.8rem;
+  height: 7.8rem;
+  align-content: center;
+  justify-items: center;
+
+  .cases-icon-inner2 {
+    background-color: #272a1c;
+    border: 1px solid #31391d;
+    border-radius: 50%;
+    width: 5.8rem;
+    height: 5.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

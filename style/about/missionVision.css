@@ -1,0 +1,113 @@
+.mv {
+  h2 {
+    color: var(--green-60);
+    font-size: 4.8rem;
+    font-weight: 400;
+  }
+  .mv-desc {
+    color: var(--grey-70);
+    font-size: 1.8rem;
+    font-weight: 300;
+    width: 129.6rem;
+    margin-top: 1.4rem;
+  }
+}
+.mv-grid {
+  margin-top: 8rem;
+}
+
+.mv-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .mv-imgs1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3.1rem;
+    width: 60rem;
+    height: 60.2rem;
+    background-image: url(../../img/simple/About_Design.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .mv-imgs1 {
+    width: 66.4rem;
+    height: 62.1rem;
+    border: 1px solid var(--grey-15);
+    border-radius: 5rem 5rem 2rem 2rem;
+    padding: 6rem 6rem 0rem 6rem;
+
+    img {
+      width: 54.4rem;
+      height: auto;
+     
+    }
+  }
+  .mv-box2 {
+    width: 93.2rem;
+    padding-left: 5rem;
+    h3 {
+      font-size: 3.8rem;
+      font-weight: 500;
+      color: var(--white-100);
+    }
+    p {
+      margin-top: 1.4rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--white-100);
+    }
+  }
+}
+
+.mv-title1 {
+  display: flex;
+  align-items: center;
+  margin-top: -10rem;
+
+  .mv-box3 {
+    width: 93.2rem;
+    padding-right: 5rem;
+    h4 {
+      font-size: 3.8rem;
+      font-weight: 500;
+      color: var(--white-100);
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-top: 1.4rem;
+      color: var(--white-100);
+    }
+  }
+  .mv-imgs4::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3.1rem;
+    width: 60rem;
+    height: 60.2rem;
+    background-image: url(../../img/simple/About_Design.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .mv-imgs4 {
+    width: 66.4rem;
+    height: 62.1rem;
+    border: 1px solid var(--grey-15);
+    border-radius: 5rem 5rem 2rem 2rem;
+    padding: 6rem 6rem 0.2rem 6rem;
+    position: relative;
+    img {
+      width: 54.4rem;
+      height: auto;
+    }
+  }
+}

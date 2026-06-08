@@ -1,0 +1,117 @@
+/*=============================================================
+          PRODUCTS SECTION (MAHSULOTLAR BO'LIMI)
+========================================================== */
+
+.products {
+  margin-top: 16.8rem;
+}
+.products__header {
+  border-radius: 2rem;
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+
+  .products__title {
+    width: 100%;
+    color: var(--green-60);
+    font-size: 4.5rem;
+
+    span {
+      color: var(--white-100);
+    }
+  }
+
+  .products__description {
+    color: var(--white-100);
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  .products__tabs {
+    background-color: var(--grey-15);
+    width: 38.6rem;
+    height: 8.3rem;
+    margin-top: -5.5rem;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn_Individuals {
+      width: 18rem;
+      height: 5.5rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn_Businesses {
+      color: var(--white-100);
+      background-color: var(--grey-15);
+      width: 18rem;
+      height: 5.5rem;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}
+
+.products__grid {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 5rem;
+  margin-top: 4rem;
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -2.5rem;
+      top: 10%;
+      width: 1px;
+      height: 80%;
+      background-color: var(--grey-15);
+    }
+
+    .product-card__title {
+      color: var(--white-100);
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+    .product-card__text {
+      text-align: center;
+      margin-top: 1rem;
+      color: var(--white-100);
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.icon-container {
+  background-color:#31322b;
+  border-radius: 50%;
+  width: 8.5rem;
+  height: 8.5rem;
+  align-content: center;
+  justify-items: center;
+
+  .circle_bg {
+    background-color:#272a1c;
+    border: 1px solid #31391d;
+    border-radius: 50%;
+    width: 6.8rem;
+    height: 6.8rem;
+    text-align: center;
+    align-content: center;
+  }
+}

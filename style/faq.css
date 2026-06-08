@@ -1,0 +1,74 @@
+/*=============================================================
+              FAQ’a (Koʻp beriladigan savollar)
+========================================================== */
+
+.faq-section {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+
+  .faq-header {
+    .faq-title {
+      font-size: 4.8rem;
+      font-weight: 500;
+      color: var(--white-100);
+    }
+    .faq-subtitle {
+      margin-top: 1.4rem;
+      color: var(--white-100);
+      font-weight: 300;
+      font-size: var(--grey-70);
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  position: relative;
+
+  .faq-item {
+    border: 1px solid var(--grey-15);
+    width: 78.2rem;
+    height: 34.7rem;
+    border-radius: 4rem;
+    padding: 5rem 5rem 5rem 5rem;
+    h4 {
+      color: var(--white-100);
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .faq__divider {
+      border: none;
+      border-top: 1px solid #262626;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      color: var(--grey-70);
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+  .faq-item1 {
+    -webkit-mask-image: linear-gradient(to bottom, white 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, white 75%, transparent 100%);
+  }
+  .faq {
+    width: 19.3rem;
+    height: 6.3rem;
+    background-color: var(--grey-11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white-100);
+    position: absolute;
+    left: 44%;
+    bottom: -4rem;
+  }
+}
