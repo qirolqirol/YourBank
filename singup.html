@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+
     <title>Document</title>
 </head>
 
@@ -44,14 +45,16 @@
             <input type="text" class="signup__input" placeholder="Enter your Email">
 
             <div class="signup__input">
-                <input type="text" class="signup__input1" placeholder="Enter your Password">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="color: #59595A; width: 24px; height: 24px;">
+                <input type="password" class="signup__input1" id="passwordField" placeholder="Enter your Password">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"
+                    id="togglePassword" style="color: #59595A; width: 24px; height: 24px;">
                     <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                     <path fill-rule="evenodd"
                         d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
                         clip-rule="evenodd" />
                 </svg>
             </div>
+            <p class="massage" id="message"></p>
         </div>
 
         <div class="signup__actions">
@@ -243,6 +246,59 @@
         </div>
     </footer>
 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const passwordField = document.getElementById("passwordField");
+            const togglePassword = document.getElementById("togglePassword");
+            const message = document.getElementById("message");
+
+            // Parolni ko'rsatish/yashirish
+            togglePassword.addEventListener("click", () => {
+                passwordField.type =
+                    passwordField.type === "password"
+                        ? "text"
+                        : "password";
+            });
+
+            // Tekshiruvchi funksiya
+            function validatePassword() {
+                const password = passwordField.value.trim();
+
+                if (password.length === 0) {
+                    message.textContent = "";
+                    passwordField.style.borderColor = "";
+                    return false;
+                }
+
+                if (password.length < 8) {
+                    message.textContent =
+                        "Parol kamida 8 ta belgidan iborat bo'lishi kerak.";
+                    message.style.color = "red";
+                    passwordField.style.borderColor = "red";
+                    return false;
+                }
+
+                message.textContent = "✓ Parol to'g'ri";
+                message.style.color = "green";
+                passwordField.style.borderColor = "green";
+                return true;
+            }
+
+            // Yozayotgan paytda tekshiradi
+            passwordField.addEventListener("input", validatePassword);
+
+            // Enter bosilganda tekshiradi
+            passwordField.addEventListener("keydown", (e) => {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    validatePassword();
+                }
+            });
+
+        });
+    </script>
 
 
 </body>

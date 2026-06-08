@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     gap: 3rem;
     margin-top: 8rem;
+    position: relative;
     .signup__input {
       border: 1px solid var(--grey-15);
       background-color: var(--grey-10);
@@ -34,6 +35,7 @@
       border-radius: 3rem;
       display: flex;
       justify-content: space-between;
+      color:var(--white-100);
       .signup__input1 {
         width: 100%;
         background-color: var(--grey-10);
@@ -44,6 +46,13 @@
         color: inherit;
       }
     }
+    .massage{
+      display: block;
+      position: absolute;
+      right: 24rem;
+      bottom: -2rem;
+    
+    }
   }
   .signup__actions {
     display: flex;
@@ -51,6 +60,7 @@
     margin-top: 4rem;
     gap: 2.4rem;
     align-items: center;
+
     .signup__btn {
       width: 51.8rem;
       height: 6.3rem;

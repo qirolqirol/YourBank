@@ -40,3 +40,4 @@
 /* **** SIGNUP STYLES **** */
 @import "./signup/signUpForm.css";
 
+@import "../app.js"
